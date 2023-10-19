@@ -1,10 +1,12 @@
 /* ESTILO GERAL */
 *{
+
 margin:0;
 padding:0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
-margin-top: 20px;
+
+
 }
 
 body{
@@ -138,10 +140,11 @@ h2.titulo{
 
     /* ESTILOS DAS ESPECIALIDADES */
 section.especialidades{
-color: #fff;
-padding: 40px;
+padding: 40px 4%;
+}
 
-
+section.especialidades .flex{
+    gap: 60px;
 }
 
 .especialidades .especialidades-box{
@@ -253,6 +256,80 @@ section.portfolio .flex{
     color: #fff;
     opacity: 0;
     transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px){
+/* classe geral */
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+/* CABEÇALHO */
+    .menu-desktop, .EF-contato{
+        display: none;
+    }
+}
+/* TOPO DO SITE */
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+h2.titulo{
+    font-size: 34px;
+    line-height:30px ;
+
+}
+section.topo-do-site{
+    padding: 20px 8%;
+}
+.topo-do-site h1{
+
+    font-size: 30px;
+}
+
+.topo-do-site .img-topo-site img{
+    width: 100%;
+}
+
+ /* ESTILOS DAS ESPECIALIDADES */
+section.especialidades{
+     padding: 40px 8%;
+        }
+/* ESTILO DO SOBRE */
+section.sobre{
+    padding: 80px 8%;
+}
+.sobre .txt-sobre h2{
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.btn-social{
+    text-align: center;
+}
+
+/* PORTFOLIO */
+section.portfolio{ 
+    padding: 80px 8%;
+}
+
+.img-port{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+section.portfolio .flex{
+    gap: 60px;
 }
 
 .overlay:hover{

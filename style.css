@@ -335,3 +335,19 @@ section.portfolio .flex{
 .overlay:hover{
     opacity: 1;
 }
+
+.img-port {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    animation: scrollImage 10s linear infinite;
+}
+
+@keyframes scrollImage {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}

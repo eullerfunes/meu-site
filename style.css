@@ -35,11 +35,12 @@ body{
     cursor: pointer;
     transition: .2s;
     }
+    
     h2.titulo span{
         color: #37e1ff;
     }
 
- button:hover{
+ button:hover, form .btn-enviar input:hover{
         box-shadow: 0px 0px 8px #fafafa;
         transform: scale(1.05);
     }    
@@ -254,13 +255,106 @@ section.portfolio .flex{
     font-size: 24px;
     font-weight: 600;
     color: #fff;
-    opacity: 0;
+    opacity: 1;
     transition: .5s;
 }
 
 .overlay:hover{
-    opacity: 1;
+    opacity: 0;
 }
+
+/* ESTILO FORMULARIO */
+section.formulario{
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+form input, textarea{
+    
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input::placeholder{
+    color: #37e1ff79;
+}
+
+form textarea{
+    resize: none;
+    max-height: 600px;
+}
+
+form .btn-enviar{
+    margin-top: 40px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #37e1ff;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #37e1ff;
+}
+
+footer .line-footer p i{
+    color: #37e1ff;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color:#fff ;
+    font-size: 15px;
+}
+
+footer .btn-social button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #37e1ff;
+    font-size: 10px;
+    cursor: pointer;
+    margin: 8px;
+    transition: .2s;
+    }
+
 
 @media screen and (max-width: 1200px){
 /* classe geral */
@@ -330,10 +424,6 @@ section.portfolio{
 
 section.portfolio .flex{
     gap: 60px;
-}
-
-.overlay:hover{
-    opacity: 1;
 }
 
 .img-port {

@@ -35,7 +35,12 @@
             </nav>
             <div class="EF-contato">
                 <a href="#">
-                    <button>Contato</button>
+                    <button  id="whatsappButton">Contato</button>
+                     <script>
+                        document.getElementById("whatsappButton").addEventListener("click", function() {
+                            window.location.href = "whatsapp://send?phone=+5519996171190";
+                        });
+                    </script>
                 </a>
             </div><!--EF contato-->
                 <!--MENU MOBILE--> 
@@ -69,7 +74,12 @@
 
                         <div class="EF-contato">
                             <a href="#">
-                                <button>Entre em contato</button>
+                                <button id="whatsappButton">Entre em contato</button>
+                                <script>
+                                    document.getElementById("whatsappButton").addEventListener("click", function() {
+                                        window.location.href = "whatsapp://send?phone=+5519996171190";
+                                    });
+                                </script>
                             </a>
 
                         </div>
